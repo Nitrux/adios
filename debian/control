@@ -1,0 +1,23 @@
+Source: adios-tools
+Section: utils
+Priority: optional
+Maintainer: Uri Herrera <uri_herrera@nxos.org
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Homepage: https://nxos.org/
+Vcs-Git: https://github.com/Nitrux/adios.git
+
+Package: adios-tools
+Architecture: all
+Depends: ruby
+Description: Userspace tools for ADIOS (Adaptive Deadline I/O Scheduler)
+ ADIOS is a block layer I/O scheduler designed for modern multi-queue
+ block devices.
+ .
+ .
+ This package provides:
+  * adiosctl: A utility to monitor and tune scheduler parameters.
+  * udev rules: Automatically configures the scheduler for supported devices.
+ .
+ Note: This package assumes the ADIOS scheduler is compiled directly
+ into the kernel (CONFIG_MQ_IOSCHED_ADIOS=y).
