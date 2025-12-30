@@ -1,7 +1,7 @@
 Source: adios-tools
 Section: utils
 Priority: optional
-Maintainer: Uri Herrera <uri_herrera@nxos.org
+Maintainer: Uri Herrera <uri_herrera@nxos.org>
 Build-Depends: debhelper-compat (= 13)
 Standards-Version: 4.6.2
 Homepage: https://nxos.org/
