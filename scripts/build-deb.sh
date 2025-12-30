@@ -9,14 +9,6 @@
 set -e
 
 
-# -- Variables.
-
-ADIOS_BRANCH="${ADIOS_BRANCH:-master}" 
-VERSION="3.1.8"
-PKG_NAME="adios-tools"
-ARCH="all"
-
-
 # -- Download Source.
 
 SRC_DIR="$(mktemp -d)"
@@ -47,9 +39,9 @@ fi
 cp udev-rules/*.rules "$UDEV_DIR/"
 
 cat <<EOF > "$DEBIAN_DIR/control"
-Package: $PKG_NAME
-Version: $VERSION
-Architecture: $ARCH
+Package: adios-tools
+Version: $PACKAGE_VERSION
+Architecture: all
 Maintainer: Nitrux Latinoamericana S.C. <hello@nxos.org>
 Depends: ruby
 Section: admin
